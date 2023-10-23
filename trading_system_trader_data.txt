@@ -1,0 +1,27 @@
+Trader Data:
+Trader Name: RozAle
+Trader ID: 1
+Trader Balance: 4993.98
+Trader Stocks:
+  Stock Name: AMD
+  Stock Price: 0.97
+  Stock quantity: 0
+  Number of trader's stocks: -1
+  Stock Name: NIKE
+  Stock Price: 0.97
+  Stock quantity: 0
+  Number of trader's stocks: 2
+  Stock Name: AMD
+  Stock Price: 1.03
+  Stock quantity: 0
+  Number of trader's stocks: 1
+
+Trader Name: VardGhuk
+Trader ID: 2
+Trader Balance: 4998.02
+Trader Stocks:
+
+Trader Name: ManAlex
+Trader ID: 3
+Trader Balance: 5000
+Trader Stocks:
