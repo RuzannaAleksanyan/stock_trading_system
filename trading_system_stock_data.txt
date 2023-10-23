@@ -1,0 +1,12 @@
+Stock Data:
+Stock Name: APPLE
+Current Price: 1
+Quantity Available: 999999
+
+Stock Name: NIKE
+Current Price: 1
+Quantity Available: 1000000
+
+Stock Name: AMD
+Current Price: 1
+Quantity Available: 1000008
