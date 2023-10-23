@@ -1,0 +1,47 @@
+Orders Data: 
+Trader!
+Trader Name: VardGhuk
+Trader ID: 2
+Account Balance: 4999.04
+Trader Stocks:
+
+Orders!
+Order ID: 1
+Trader ID: 2
+Stock Name: AMD
+Price: 1
+Quantity: 1
+
+
+
+Orders Data: 
+Trader!
+Trader Name: VardGhuk
+Trader ID: 2
+Account Balance: 4999.04
+Trader Stocks:
+
+Orders!
+Order ID: 1
+Trader ID: 2
+Stock Name: NIKE
+Price: 7
+Quantity: 1
+
+
+
+Orders Data: 
+Trader!
+Trader Name: RozAle
+Trader ID: 1
+Account Balance: 4948.58
+Trader Stocks:
+
+Orders!
+Order ID: 1
+Stock Name: AMD
+Price: 1
+Quantity: 1
+
+
+
