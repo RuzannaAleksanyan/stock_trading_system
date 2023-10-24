@@ -65,7 +65,7 @@ The program is designed to run in a terminal or command line, allowing users to 
 
    - After successfully building Stock Trading System, run it by executing the following command:
      ```
-     ./myshell
+     ./stock_trading_system
      ```
      
 3. **Customization:**
