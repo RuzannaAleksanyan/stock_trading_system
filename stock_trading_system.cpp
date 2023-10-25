@@ -115,33 +115,43 @@ void Trading_System::read_container_trader_data_from_file()
                     } else if (key == "Trader Balance") {
                         trader_balance = std::stod(value);
                     } else if(key == "Trader Stocks:") {
+                        while (std::getline(input_file, line) && !line.empty()) {
+                            std::string stock_name;
+                            double stock_price = 0.0;
+                            int stock_quantity = 0;
+                            int quantity = 0;
+                            
+                            // Read stock price
+                            size_t colon_pos = line.find(": ");
+                            if(colon_pos != std::string::npos) {
+                                stock_name = line.substr(colon_pos + 2);
+                            }
 
-                    } else if (key == "Stock Name") {
-                        std::string stock_name = value;
-
-                        // Read stock price:
-                        std::getline(input_file, line);
-                        colon_pos = line.find(": ");
-                        if (colon_pos != std::string::npos) {
-                            double stock_price = std::stod(line.substr(colon_pos + 2));
-
-                            // Read stock quantity:
+                            // Read stock price
                             std::getline(input_file, line);
                             colon_pos = line.find(": ");
                             if (colon_pos != std::string::npos) {
-                                int stock_quantity = std::stoi(line.substr(colon_pos + 2));
+                                stock_price = std::stod(line.substr(colon_pos + 2));
+                            }
 
-                                // Read trader's stock quantity:
-                                std::getline(input_file, line);
-                                colon_pos = line.find(": ");
-                                if (colon_pos != std::string::npos) {
-                                    int traders_stock_quantity = std::stoi(line.substr(colon_pos + 2));
+                            // Read stock quantity
+                            std::getline(input_file, line);
+                            colon_pos = line.find(": ");
+                            if (colon_pos != std::string::npos) {
+                                stock_quantity = std::stoi(line.substr(colon_pos + 2));
+                            }
 
-                                    Stock* stock = find_stock_by_symbol(stock_name);
-                                    if (stock) {
-                                        trader_stocks[stock] = traders_stock_quantity;
-                                    }
-                                }
+                            // Read traders stock quantity
+                            std::getline(input_file, line);
+                            colon_pos = line.find(": ");
+                            if(colon_pos != std::string::npos) {
+                                quantity = std::stoi(line.substr(colon_pos + 2));
+                            }
+
+                            // Stock* stock = find_stock_by_symbol(stock_name);
+                            Stock* stock = new Stock(stock_name, stock_price);
+                            if (stock) {
+                                trader_stocks[stock] = quantity;
                             }
                         }
                     }
