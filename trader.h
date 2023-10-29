@@ -32,4 +32,4 @@ public:
     void set_stocks(std::unordered_map<Stock*, int> stocks);
 };
 
-#endif
+#endif    // TRADER
