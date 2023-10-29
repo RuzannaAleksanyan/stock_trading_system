@@ -16,4 +16,4 @@ bool handle_post_action(Trading_System& trading_system, bool& stop_flag, std::th
 
 void run_stock_trading_system();
 
-#endif
+#endif  // TEST
