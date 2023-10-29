@@ -45,4 +45,4 @@ public:
     bool return_id(int id);
 };
 
-#endif
+#endif    // STOCK_SYSTEM
