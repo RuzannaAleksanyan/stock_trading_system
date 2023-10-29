@@ -24,4 +24,4 @@ public:
     void randomize_price();
 };
 
-#endif
+#endif    // STOCK
